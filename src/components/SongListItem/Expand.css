@@ -1,0 +1,12 @@
+.isExpanded {
+    height: auto;
+}
+
+.isHidden {
+    height: 0;
+    overflow: hidden;
+}
+
+.clickable {
+    cursor: pointer;
+}
