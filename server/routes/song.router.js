@@ -38,6 +38,7 @@ router.post('/', (req, res) => {
     const newSong = req.body;
     const sqlText = `INSERT INTO songs (rank, artist, track, published) VALUES 
   ($1, $2, $3, $4)`;
+    // look I CHANGED
     // Let sql sanitize your inputs (NO Bobby Drop Tables here!)
     // the $1, $2, etc get substituted with the values from the array below
     pool.query(sqlText, [newSong.rank, newSong.artist, newSong.track, newSong.published])
